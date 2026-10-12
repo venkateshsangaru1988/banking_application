@@ -1,0 +1,16 @@
+server:
+  port: 8282
+  servlet:
+    context-path: /bank
+spring:
+  profiles:
+    active: local
+  application:
+    name: bank_application
+jwt:
+ secret: 0123456789012345678901234567890123456789012345678901234567890123
+ expiration: 3600000
+ 
+ scheduler:
+   cron: "0 * * * * *"
+
